@@ -126,9 +126,9 @@ export default {
     }
   },
   mounted () {
-    window.YTConfig = {
-      host: 'https://www.youtube.com'
-    }
+    // window.YTConfig = {
+    //   host: 'https://www.youtube.com'
+    // }
 
     this.player = player(this.$el, {
       width: this.width,

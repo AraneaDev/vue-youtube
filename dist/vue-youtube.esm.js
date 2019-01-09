@@ -1,6 +1,6 @@
 /*!
- * vue-youtube v1.3.3
- * (c) 2018 Antério Vieira
+ * vue-youtube v1.3.4
+ * (c) 2019 Antério Vieira
  * Released under the MIT License.
  */
 
@@ -187,9 +187,9 @@ var Youtube = {
     }
   },
   mounted: function mounted () {
-    window.YTConfig = {
-      host: 'https://www.youtube.com'
-    };
+    // window.YTConfig = {
+    //   host: 'https://www.youtube.com'
+    // }
 
     this.player = player(this.$el, {
       width: this.width,
@@ -227,6 +227,6 @@ if (typeof window !== 'undefined' && window.Vue) {
   window.Vue.use(plugin);
 }
 
-var version = '1.3.3';
+var version = '1.3.4';
 
 export { Youtube, version };export default plugin;
